@@ -4,15 +4,15 @@
 declare type CreateUserParams = {
   clerkId: string;
   email: string;
-  username: string;
-  firstName: string;
-  lastName: string;
+  username: string| null;
+  firstName: string | null;
+  lastName: string | null;
   photo: string;
 };
 
 declare type UpdateUserParams = {
-  firstName: string;
-  lastName: string;
+  firstName: string | null;
+  lastName: string | null;
   username: string;
   photo: string;
 };
@@ -56,19 +56,19 @@ declare type UpdateImageParams = {
 };
 
 declare type Transformations = {
-  restore?: boolean;
-  fillBackground?: boolean;
-  remove?: {
-    prompt: string;
-    removeShadow?: boolean;
-    multiple?: boolean;
-  };
-  recolor?: {
-    prompt?: string;
-    to: string;
-    multiple?: boolean;
-  };
-  removeBackground?: boolean;
+  Chat?: boolean;
+  BookACall?: boolean;
+  // remove?: {
+  //   prompt: string;
+  //   removeShadow?: boolean;
+  //   multiple?: boolean;
+  // };
+  // recolor?: {
+  //   prompt?: string;
+  //   to: string;
+  //   multiple?: boolean;
+  // };
+  // removeBackground?: boolean;
 };
 
 // ====== TRANSACTION PARAMS

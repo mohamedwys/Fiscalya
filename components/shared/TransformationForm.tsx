@@ -4,13 +4,6 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -22,6 +15,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form"
+
 import { Input } from "@/components/ui/input"
 import { aspectRatioOptions, creditFee, defaultValues, transformationTypes } from "@/constants"
 import { CustomField } from "./CustomField"
@@ -178,7 +172,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
   }
 
   useEffect(() => {
-    if(image && (type === 'restore' || type === 'removeBackground')) {
+    if(image && (type === 'ChatHelp' || type === 'BookACall')) {
       setNewTransformation(transformationType.config)
     }
   }, [image, transformationType.config, type])
@@ -194,79 +188,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
           className="w-full"
           render={({ field }) => <Input {...field} className="input-field" />}
         />
-
-        {type === 'fill' && (
-          <CustomField
-            control={form.control}
-            name="aspectRatio"
-            formLabel="Aspect Ratio"
-            className="w-full"
-            render={({ field }) => (
-              <Select
-                onValueChange={(value) => onSelectFieldHandler(value, field.onChange)}
-                value={field.value}
-              >
-                <SelectTrigger className="select-field">
-                  <SelectValue placeholder="Select size" />
-                </SelectTrigger>
-                <SelectContent>
-                  {Object.keys(aspectRatioOptions).map((key) => (
-                    <SelectItem key={key} value={key} className="select-item">
-                      {aspectRatioOptions[key as AspectRatioKey].label}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            )}  
-          />
-        )}
-
-        {(type === 'remove' || type === 'recolor') && (
-          <div className="prompt-field">
-            <CustomField 
-              control={form.control}
-              name="prompt"
-              formLabel={
-                type === 'remove' ? 'Object to remove' : 'Object to recolor'
-              }
-              className="w-full"
-              render={({ field }) => (
-                <Input 
-                  value={field.value}
-                  className="input-field"
-                  onChange={(e) => onInputChangeHandler(
-                    'prompt',
-                    e.target.value,
-                    type,
-                    field.onChange
-                  )}
-                />
-              )}
-            />
-
-            {type === 'recolor' && (
-              <CustomField 
-                control={form.control}
-                name="color"
-                formLabel="Replacement Color"
-                className="w-full"
-                render={({ field }) => (
-                  <Input 
-                    value={field.value}
-                    className="input-field"
-                    onChange={(e) => onInputChangeHandler(
-                      'color',
-                      e.target.value,
-                      'recolor',
-                      field.onChange
-                    )}
-                  />
-                )}
-              />
-            )}
-          </div>
-        )}
-
+        
         <div className="media-uploader-field">
           <CustomField 
             control={form.control}
