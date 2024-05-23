@@ -4,6 +4,13 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -15,7 +22,6 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form"
-
 import { Input } from "@/components/ui/input"
 import { aspectRatioOptions, creditFee, defaultValues, transformationTypes } from "@/constants"
 import { CustomField } from "./CustomField"
@@ -25,7 +31,7 @@ import MediaUploader from "./MediaUploader"
 import TransformedImage from "./TransformedImage"
 import { updateCredits } from "@/lib/actions/user.actions"
 import { getCldImageUrl } from "next-cloudinary"
-import { addImage, updateImage } from "@/lib/actions/image.actions"
+// import { addImage, updateImage } from "@/lib/actions/image.actions"
 import { useRouter } from "next/navigation"
 import { InsufficientCreditsModal } from "./InsufficientCreditsModal"
  
@@ -87,45 +93,45 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
         color: values.color,
       }
 
-      if(action === 'Add') {
-        try {
-          const newImage = await addImage({
-            image: imageData,
-            userId,
-            path: '/'
-          })
+    //   if(action === 'Add') {
+    //     try {
+    //       const newImage = await addImage({
+    //         image: imageData,
+    //         userId,
+    //         path: '/'
+    //       })
 
-          if(newImage) {
-            form.reset()
-            setImage(data)
-            router.push(`/transformations/${newImage._id}`)
-          }
-        } catch (error) {
-          console.log(error);
-        }
-      }
+    //       if(newImage) {
+    //         form.reset()
+    //         setImage(data)
+    //         router.push(`/transformations/${newImage._id}`)
+    //       }
+    //     } catch (error) {
+    //       console.log(error);
+    //     }
+    //   }
 
-      if(action === 'Update') {
-        try {
-          const updatedImage = await updateImage({
-            image: {
-              ...imageData,
-              _id: data._id
-            },
-            userId,
-            path: `/transformations/${data._id}`
-          })
+    //   if(action === 'Update') {
+    //     try {
+    //       const updatedImage = await updateImage({
+    //         image: {
+    //           ...imageData,
+    //           _id: data._id
+    //         },
+    //         userId,
+    //         path: `/transformations/${data._id}`
+    //       })
 
-          if(updatedImage) {
-            router.push(`/transformations/${updatedImage._id}`)
-          }
-        } catch (error) {
-          console.log(error);
-        }
-      }
+    //       if(updatedImage) {
+    //         router.push(`/transformations/${updatedImage._id}`)
+    //       }
+    //     } catch (error) {
+    //       console.log(error);
+    //     }
+    //   }
     }
 
-    setIsSubmitting(false)
+  //   setIsSubmitting(false)
   }
 
   const onSelectFieldHandler = (value: string, onChangeField: (value: string) => void) => {
@@ -172,7 +178,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
   }
 
   useEffect(() => {
-    if(image && (type === 'ChatHelp' || type === 'BookACall')) {
+    if(image && (type === 'BookACall' || type === 'ChatHelp')) {
       setNewTransformation(transformationType.config)
     }
   }, [image, transformationType.config, type])
@@ -188,7 +194,79 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
           className="w-full"
           render={({ field }) => <Input {...field} className="input-field" />}
         />
-        
+
+        {type === 'BookACall' && (
+          <CustomField
+            control={form.control}
+            name="aspectRatio"
+            formLabel="Aspect Ratio"
+            className="w-full"
+            render={({ field }) => (
+              <Select
+                onValueChange={(value) => onSelectFieldHandler(value, field.onChange)}
+                value={field.value}
+              >
+                <SelectTrigger className="select-field">
+                  <SelectValue placeholder="Select size" />
+                </SelectTrigger>
+                <SelectContent>
+                  {Object.keys(aspectRatioOptions).map((key) => (
+                    <SelectItem key={key} value={key} className="select-item">
+                      {aspectRatioOptions[key as AspectRatioKey].label}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            )}  
+          />
+        )}
+
+        {(type === 'ChatHelp' || type === 'BookACall') && (
+          <div className="prompt-field">
+            <CustomField 
+              control={form.control}
+              name="prompt"
+              formLabel={
+                type === 'ChatHelp' ? 'Object to remove' : 'Object to recolor'
+              }
+              className="w-full"
+              render={({ field }) => (
+                <Input 
+                  value={field.value}
+                  className="input-field"
+                  onChange={(e) => onInputChangeHandler(
+                    'prompt',
+                    e.target.value,
+                    type,
+                    field.onChange
+                  )}
+                />
+              )}
+            />
+
+            {type === 'ChatHelp' && (
+              <CustomField 
+                control={form.control}
+                name="color"
+                formLabel="Replacement Color"
+                className="w-full"
+                render={({ field }) => (
+                  <Input 
+                    value={field.value}
+                    className="input-field"
+                    onChange={(e) => onInputChangeHandler(
+                      'color',
+                      e.target.value,
+                      'recolor',
+                      field.onChange
+                    )}
+                  />
+                )}
+              />
+            )}
+          </div>
+        )}
+
         <div className="media-uploader-field">
           <CustomField 
             control={form.control}
@@ -237,4 +315,4 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
   )
 }
 
-export default TransformationForm
+export default TransformationForm;
