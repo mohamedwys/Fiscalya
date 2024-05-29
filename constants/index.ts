@@ -1,28 +1,33 @@
 export const navLinks = [
   {
     label: "Home",
-    route: "/",
+    route: "/Home",
     icon: "/assets/icons/home.svg",
   },
   {
-    label: "Chat Help",
-    route: "/ChatHelp",
-    icon: "/assets/icons/stars.svg",
+    label: "Advisor Pro",
+    route: "/Chat-Quick",
+    icon: "/assets/icons/bot-message-square.svg",
   },
   {
     label: "Book a Call",
     route: "/BookACall",
-    icon: "/assets/icons/image.svg",
+    icon: "/assets/icons/phone-outgoing.svg",
+  },
+  {
+    label: "Partnership",
+    route: "/Partnership",
+    icon: "/assets/icons/global.svg",
   },
   {
     label: "Profile",
     route: "/profile",
-    icon: "/assets/icons/profile.svg",
+    icon: "/assets/icons/user.svg",
   },
   {
     label: "Buy Credits",
     route: "/credits",
-    icon: "/assets/icons/bag.svg",
+    icon: "/assets/icons/coin.svg",
   },
 ];
 
@@ -39,7 +44,7 @@ export const plans = [
         isIncluded: true,
       },
       {
-        label: "Basic Access to Services",
+        label: "Pdf Report",
         isIncluded: true,
       },
       {
@@ -47,7 +52,7 @@ export const plans = [
         isIncluded: false,
       },
       {
-        label: "Priority Updates",
+        label: "1 Call/Month",
         isIncluded: false,
       },
     ],
@@ -56,23 +61,23 @@ export const plans = [
     _id: 2,
     name: "Pro Package",
     icon: "/assets/icons/free-plan.svg",
-    price: 10,
-    credits: 20,
+    price: 15,
+    credits: 15,
     inclusions: [
       {
-        label: "20 Credits",
+        label: "15 Credits",
         isIncluded: true,
       },
       {
-        label: "Full Access to Services",
+        label: "PDF Report",
         isIncluded: true,
       },
       {
         label: "Priority Customer Support",
-        isIncluded: true,
+        isIncluded: false,
       },
       {
-        label: "Priority Updates",
+        label: "1 Call/Month",
         isIncluded: false,
       },
     ],
@@ -81,15 +86,15 @@ export const plans = [
     _id: 3,
     name: "Premium Package",
     icon: "/assets/icons/free-plan.svg",
-    price: 60,
-    credits: 300,
+    price: 100,
+    credits: 100,
     inclusions: [
       {
-        label: "300 Credits",
+        label: "100 Credits",
         isIncluded: true,
       },
       {
-        label: "Full Access to Services",
+        label: "PDF Report",
         isIncluded: true,
       },
       {
@@ -97,7 +102,7 @@ export const plans = [
         isIncluded: true,
       },
       {
-        label: "Priority Updates",
+        label: "1 Call/Month",
         isIncluded: true,
       },
     ],

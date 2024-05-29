@@ -1,3 +1,4 @@
+
 "use server";
 
 import { revalidatePath } from "next/cache";
@@ -22,9 +23,11 @@ export async function createUser(user: CreateUserParams) {
 // READ
 export async function getUserById(userId: string) {
   try {
+    console.log("connect to database")
     await connectToDatabase();
-
+ console.log("database connected")
     const user = await User.findOne({ clerkId: userId });
+    console.log("Usr found")
 
     if (!user) throw new Error("User not found");
 

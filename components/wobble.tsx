@@ -10,7 +10,7 @@ export function WobbleCardDemo() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
       <WobbleCard
-        containerClassName="col-span-1 lg:col-span-2 h-full bg-[#820000] min-h-[500px] lg:min-h-[300px] relative"
+        containerClassName="col-span-1 lg:col-span-2 h-full bg-[#474747] min-h-[500px] lg:min-h-[300px] relative"
         className=""
       >
         <div className="max-w-xs flex items-center justify-between">
@@ -27,7 +27,7 @@ export function WobbleCardDemo() {
         </ul>
        
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-[#C86F5E]">
+      <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-[#BCFD4C]">
         <h2 className="text-top-left text-balance text-base md:text-xl lg:text-4xl font-semibold tracking-[-0.015em] text-zinc-700">
           Tailored Consultation
         </h2>
@@ -38,7 +38,7 @@ export function WobbleCardDemo() {
           <li>Benefit from our extensive knowledge and experience</li>
         </ul>
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-[#C86F5E]">
+      <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-[#BCFD4C]">
         <h2 className="text-top-left text-balance text-base md:text-xl lg:text-4xl font-semibold tracking-[-0.015em] text-zinc-700">
           Tailored Consultation
         </h2>
@@ -49,7 +49,7 @@ export function WobbleCardDemo() {
           <li>Benefit from our extensive knowledge and experience</li>
         </ul>
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 lg:col-span-2 h-full bg-[#820000] min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] relative">
+      <WobbleCard containerClassName="col-span-1 lg:col-span-2 h-full bg-[#474747] min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] relative">
         <div className="max-w-xs flex items-center justify-between">
           <h2 className="text-left text-balance text-base md:text-xl lg:text-4xl font-semibold tracking-[-0.015em] text-neutral-200">
             Customized Solutions

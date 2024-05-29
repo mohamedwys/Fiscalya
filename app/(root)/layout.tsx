@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <main className="h-full bg-[#FBE9D0] overflow-auto root ">
+    <main className="h-full overflow-auto root ">
       <SignedIn>
       <Sidebar />
       </SignedIn>

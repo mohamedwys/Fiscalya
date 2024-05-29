@@ -1,3 +1,5 @@
+"use client";
+
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
@@ -57,7 +59,7 @@ export const HoverEffect = () => {
             <AnimatePresence>
               {hoveredIndex === idx && (
                 <motion.span
-                  className="absolute inset-0 h-full w-full bg-[#820000] block  rounded-3xl"
+                  className="absolute inset-0 h-full w-full bg-[#BCFD4C] block  rounded-3xl"
                   layoutId="hoverBackground" // required for the background to follow
                   initial={{ opacity: 0 }}
                   animate={{
@@ -71,7 +73,7 @@ export const HoverEffect = () => {
                 />
               )}
             </AnimatePresence>
-            <div className=" rounded-2xl h-full w-full p-4 overflow-hidden bg-[#966F60] border border-transparent group-hover:border-slate-700 relative z-50">
+            <div className=" rounded-2xl h-full w-full p-4 overflow-hidden bg-[#474747] border border-transparent group-hover:border-slate-700 relative z-50">
               <div className="relative z-50">
                 <div className="p-4">
                   <h4 className="text-neutral-200 font-bold tracking-wide mt-4">
