@@ -90,13 +90,13 @@ export default function FAQ() {
     return (
         <div className="flex flex-col w-full py-[48px] lg:py-[60px] lg:flex-row lg:gap-x-6">
             <div className="lg:w-[44%] lg:py-[32px] lg:pr-[56px]">
-                <h3 className="text-[#BCFD4C] font-poppins text-[17px] font-bold lg:text-base">
+                <h3 className="text-[#457b9d] font-poppins text-[17px] font-bold lg:text-base">
                     Embracing Tax Efficiency
                 </h3>
                 <h1 className="py-4 text-3xl font-poppins font-semibold text-[#172026] lg:text-[40px] lg:leading-[58px]">
                     Leveraging the Unique Characteristics of Taxation 
                 </h1>
-                <p className="text-neutral-200 font-poppins font-medium pb-[24px]">
+                <p className="text-zinc-500 font-poppins font-medium pb-[24px]">
                 At Fiscalya, we have a team of experienced tax professionals who are well-versed in the UAE's excise tax laws and regulations. We provide tailored solutions to meet the specific needs of our clients, ensuring that they are fully compliant with the tax authorities. Our services are designed to help businesses minimize their tax liabilities and maximize their profitability.
 
                 </p>
@@ -113,7 +113,7 @@ export default function FAQ() {
                         <div key={index}>
                             <Accordion.Item
                                 value={`item-${index + 1}`}
-                                className="bg-[#474747] p-[16px] rounded-[8px]"
+                                className="bg-[#6E6E6E] p-[16px] rounded-[8px]"
                             >
                                 <Accordion.Header>
                                     <Accordion.Trigger className="flex w-full items-center justify-between">

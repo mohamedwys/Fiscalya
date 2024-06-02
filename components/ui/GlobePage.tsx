@@ -15,7 +15,7 @@ export function GlobeDemo() {
     showAtmosphere: true,
     atmosphereColor: "#FFFFFF",
     atmosphereAltitude: 0.1,
-    emissive: "#A6A6A6",
+    emissive: "#ced4da",
     emissiveIntensity: 0.1,
     shininess: 0.9,
     polygonColor: "#BCFD4C",
@@ -396,7 +396,7 @@ export function GlobeDemo() {
   ];
 
   return (
-    <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-black bg-[#6E6E6E] relative w-full">
+    <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-black bg-[#ced4da] relative w-full">
       <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
         <motion.div
           initial={{
@@ -412,16 +412,16 @@ export function GlobeDemo() {
           }}
           className="div"
         >
-          <h2 className="text-center text-xl md:text-4xl font-bold text-neutral-200 dark:text-white">
+          <h2 className="text-center text-xl md:text-4xl font-bold text-zinc-500 dark:text-white">
             Worldwide Solutions
           </h2>
-          <p className="text-center text-base md:text-lg font-semibold text-neutral-200 dark:text-neutral-200 max-w-md mt-2 mx-auto">
+          <p className="text-center text-base md:text-lg font-semibold text-zinc-500 dark:text-neutral-200 max-w-md mt-2 mx-auto">
             Across The Globe, Fiscalya Cater 
             To Your Legal & Tax Needs
             
           </p>
         </motion.div>
-        <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-[#6E6E6E] z-40" />
+        <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-[#ced4da] z-40" />
         <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
           <World data={sampleArcs} globeConfig={globeConfig} />;
         </div>

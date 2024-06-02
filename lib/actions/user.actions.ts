@@ -3,9 +3,9 @@
 
 import { revalidatePath } from "next/cache";
 
-import User from "../database/models/user.model";
+import User from "@/lib/database/models/user.model";
 import { connectToDatabase } from "../database/mongoose";
-import { handleError } from "../utils";
+import { handleError } from "@/lib/utils";
 
 // CREATE
 export async function createUser(user: CreateUserParams) {
@@ -21,21 +21,35 @@ export async function createUser(user: CreateUserParams) {
 }
 
 // READ
-export async function getUserById(userId: string) {
+export const getUserById = async (userId: string) => {
   try {
-    console.log("connect to database")
-    await connectToDatabase();
- console.log("database connected")
-    const user = await User.findOne({ clerkId: userId });
-    console.log("Usr found")
+    const user = await User.findOne({ clerkId: userId }); // Replace with your actual data fetching logic
 
-    if (!user) throw new Error("User not found");
+    if (!user) {
+      throw new Error('User not found');
+    }
 
     return JSON.parse(JSON.stringify(user));
   } catch (error) {
     handleError(error);
+    return null; // Ensure a return value for TypeScript
   }
-}
+};
+// export async function getUserById(userId: string) {
+//   try {
+//     console.log("connect to database")
+//     await connectToDatabase();
+//  console.log("database connected")
+//     const user = await User.findOne({ clerkId: userId });
+//     console.log("Usr found")
+
+//     if (!user) throw new Error("User not found");
+
+//     return JSON.parse(JSON.stringify(user));
+//   } catch (error) {
+//     handleError(error);
+//   }
+// }
 
 // UPDATE
 export async function updateUser(clerkId: string, user: UpdateUserParams) {

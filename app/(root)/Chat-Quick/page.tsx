@@ -1,27 +1,10 @@
-import { auth } from "@clerk/nextjs/server";
-import { redirect } from "next/navigation";
+import { Chat } from "@/components/chatComponent";
 
-import ChatComponent from "@/components/chatComponent";
-import { useChat } from "ai/react";
+export const runtime = 'edge';
 
-const Chat = async () => {
-  const { userId } = auth();
-  const { input, handleInputChange, handleSubmit, isLoading, messages } = useChat();
-
-  if (!userId) redirect("/sign-in");
-
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="bg-white p-6 rounded-lg shadow-lg w-full md:w-[800px] lg:w-[1000px]">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">How Can we light You</h2>
-        <ChatComponent />
-      </div>
-    </main>
-  );
-};
-
-export default Chat;
-
+export default function Page() {
+  return <Chat />;
+}
 
 // import { auth } from "@clerk/nextjs/server";
 // import { SignedIn } from "@clerk/nextjs";

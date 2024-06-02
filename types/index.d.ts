@@ -1,5 +1,35 @@
 /* eslint-disable no-unused-vars */
+export interface NavItem {
+  title: string
+  href: string
+  disabled?: boolean
+}
 
+export interface NavItemFooter {
+  title: string
+  items: {
+    title: string
+    href: string
+    external?: boolean
+  }[]
+}
+
+export interface PricingPlan {
+  id: "basic" | "standard" | "premium"
+  name: string
+  description: string
+  features: string[]
+  limitations: string[]
+  stripePriceId: string
+  prices: {
+    monthly: number
+    yearly: number
+  }
+  stripeIds: {
+    monthly?: string
+    yearly?: string
+  }
+}
 // ====== USER PARAMS
 declare type CreateUserParams = {
   clerkId: string;
@@ -34,41 +64,6 @@ declare type AddImageParams = {
   };
   userId: string;
   path: string;
-};
-
-declare type UpdateImageParams = {
-  image: {
-    _id: string;
-    title: string;
-    publicId: string;
-    transformationType: string;
-    width: number;
-    height: number;
-    config: any;
-    secureURL: string;
-    transformationURL: string;
-    aspectRatio: string | undefined;
-    prompt: string | undefined;
-    color: string | undefined;
-  };
-  userId: string;
-  path: string;
-};
-
-declare type Transformations = {
-  Chat?: boolean;
-  BookACall?: boolean;
-  // remove?: {
-  //   prompt: string;
-  //   removeShadow?: boolean;
-  //   multiple?: boolean;
-  // };
-  // recolor?: {
-  //   prompt?: string;
-  //   to: string;
-  //   multiple?: boolean;
-  // };
-  // removeBackground?: boolean;
 };
 
 // ====== TRANSACTION PARAMS

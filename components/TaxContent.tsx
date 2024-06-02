@@ -12,7 +12,7 @@ const TaxContent =  () => {
       <section className="container mx-auto py-12">
         <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-8">
           <div className="text-center max-w-md">
-            <p className="text-neutral-200">
+            <p className="text-zinc-500">
               <strong>Direct Tax</strong><br />
               Direct taxes are levied directly on an individual's income or wealth. These taxes are paid by the taxpayer to the government and cannot be transferred to another entity. 
               <br /><br />
@@ -42,7 +42,7 @@ const TaxContent =  () => {
           </div>
           <div className="text-center max-w-md">
             
-            <p className="text-neutral-200">
+            <p className="text-zinc-500">
               <strong>Indirect Tax</strong><br />
               Indirect taxes, on the other hand, are levied on goods and services consumed by individuals. These taxes are paid by the consumer through the price of the goods or services. Indirect taxes are typically imposed on the production, distribution, or sale of goods and services, and the rate of taxation is the same for all taxpayers. 
 .

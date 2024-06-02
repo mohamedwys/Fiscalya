@@ -28,7 +28,7 @@ import { CustomField } from "./CustomField"
 import { useEffect, useState, useTransition } from "react"
 import { AspectRatioKey, debounce, deepMergeObjects } from "@/lib/utils"
 
-import TransformedImage from "./TransformedImage"
+
 import { updateCredits } from "@/lib/actions/user.actions"
 import { getCldImageUrl } from "next-cloudinary"
 // import { addImage, updateImage } from "@/lib/actions/image.actions"
@@ -267,17 +267,8 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
           </div>
         )}
 
-        <div className="media-uploader-field">
-         
-          <TransformedImage 
-            image={image}
-            type={type}
-            title={form.getValues().title}
-            isTransforming={isTransforming}
-            setIsTransforming={setIsTransforming}
-            transformationConfig={transformationConfig}
-          />
-        </div>
+        
+        
 
         <div className="flex flex-col gap-4">
           <Button 

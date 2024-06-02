@@ -54,7 +54,7 @@ const Sidebar = () => {
 
                 return (
                   <li key={link.route} className={`sidebar-nav_element group ${
-                    isActive ? 'bg-[#BCFD4C] text-zinc-600' : 'text-neutral-200'
+                    isActive ? 'bg-[#295872] text-[#BCFD4C]' : 'text-neutral-200'
                   }`}>
                     <Link className="sidebar-link" href={link.route}>
                       <Image 
