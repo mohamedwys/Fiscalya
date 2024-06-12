@@ -40,7 +40,7 @@ const initialNodes: CustomNode[] = [
 const initialEdges: Edge[] = [{ id: 'e1-2', source: '1', target: '2' }];
 
 const UpdateNode: React.FC = () => {
-  const [nodes, setNodes, onNodesChange] = useNodesState<ReactFlowNode<NodeData>>(initialNodes);
+  const [nodes, setNodes, onNodesChange] = useNodesState<NodeData>(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
   const [selectedNode, setSelectedNode] = useState<CustomNode | null>(null);
   const [nodeName, setNodeName] = useState<string>('');
