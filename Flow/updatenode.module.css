@@ -31,8 +31,8 @@
   border-radius: 10px;
   width: 150px;
   word-wrap: break-word;
-  background-color: #bdbdbd; /* White background for nodes */
-  color: #2e2e2e; /* Black text color for nodes */
+  background-color: #404040; /* Gray background for nodes */
+  color: #ffffff;
   text-align: center;
   font-family: Arial, sans-serif;
   font-weight: bold; /* Bold text inside nodes */

@@ -31,7 +31,7 @@ export function WobbleCardDemo() {
         </h2>
         <ul className="mt-4 max-w-[26rem] text-left text-base/6 font-semibold text-zinc-700 list-disc pl-4">
           <li>Access a vast database of tax and legal knowledge curated by industry professionals.</li>
-          <li>Instantly find the information you need, whether you're a small business owner or an individual seeking legal advice.</li>
+          <li>Instantly find the information you need, whether you’re a small business owner or an individual seeking legal advice.</li>
           
         </ul>
       </WobbleCard>

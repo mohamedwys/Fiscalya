@@ -88,6 +88,7 @@ const UpdateNode: React.FC = () => {
       position: { x: Math.random() * 400, y: Math.random() * 400 },
       style: { borderRadius: '10px', width: '150px', backgroundColor: '#ffffff', color: '#000000', fontWeight: 'bold' },
     };
+    setNodes((nds) => [...nds, newNode]);
   };
 
   const onNodeClick = (_event: React.MouseEvent, node: ReactFlowNode<NodeData>) => {

@@ -16,7 +16,7 @@ const BusinessSolutions =  () => {
         <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
             <Balancer>
               <span className="bg-gradient-to-r from-zinc-400 to-zinc-600 bg-clip-text text-transparent">
-              Together, We'll Take Care of Your Business
+              Together, we’ll Take Care of Your Business
               </span>
             </Balancer>
           </h2>
@@ -64,7 +64,7 @@ const BusinessSolutions =  () => {
         <div className="mt-12">
           <h3 className="text-xl font-bold text-center text-zinc-500">Post-Call Services</h3>
           <p className="text-gray-600 text-center mt-4">
-            After our initial consultation, we'll provide you with a detailed report outlining our recommendations and a roadmap for implementation. Our team will be available for ongoing support and guidance to ensure the success of your personalized tax strategy.
+            After our initial consultation, we’ll provide you with a detailed report outlining our recommendations and a roadmap for implementation. Our team will be available for ongoing support and guidance to ensure the success of your personalized tax strategy.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
             <div className="bg-[#adb5bd] text-center shadow-md rounded-lg p-6">
@@ -85,21 +85,21 @@ const BusinessSolutions =  () => {
               <Image className="inline-block mb-8" src="/assets/icons/planning.svg" alt="Tax Planning" width={50} height={50} />
               <h4 className="text-lg font-bold text-gray-800 mt-4">Tax Planning</h4>
               <p className="text-gray-600 mt-2">
-                Develop and implement strategic tax planning solutions to minimize clients' tax liabilities.
+                Develop and implement strategic tax planning solutions to minimize clients tax liabilities.
               </p>
             </div>
             <div className="bg-[#adb5bd] text-center shadow-md rounded-lg p-6">
               <Image className="inline-block mb-8" src="/assets/icons/audit.svg" alt="Tax Audit" width={50} height={50} />
               <h4 className="text-lg font-bold text-gray-800 mt-4">Tax Audit</h4>
               <p className="text-gray-600 mt-2">
-                Provide expert assistance and representation during tax audits to protect clients' interests.
+                Provide expert assistance and representation during tax audits to protect clients interests.
               </p>
             </div>
           </div>
         </div>
 
         <div className="mt-12 bg-zinc-400 p-6 rounded-md">
-          <h3 className="text-xl font-bold text-white text-center">How can we help? We're glad to answer all of your questions.</h3>
+          <h3 className="text-xl font-bold text-white text-center">How can we help? we’re glad to answer all of your questions.</h3>
           <form className="mt-6 flex flex-col gap-4">
             <div className="flex flex-col md:flex-row gap-4">
               <input

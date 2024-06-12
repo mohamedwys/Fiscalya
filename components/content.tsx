@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 export function Content(props: { title: string }) {
     return (
       <div className="flex flex-wrap">
@@ -443,7 +444,7 @@ export function Content(props: { title: string }) {
                     </div>
                   </div>
                   <p className="my-2 text-sm text-gray-400">
-                    Hey, can tell me about progress of project? I'm waiting for your response.
+                    Hey, can tell me about progress of project? I’m waiting for your response.
                   </p>
                   <p className="text-right text-sm text-gray-400">Dec, 12</p>
                 </div>
@@ -475,7 +476,7 @@ export function Content(props: { title: string }) {
                     </div>
                   </div>
                   <p className="my-2 text-sm text-gray-400">
-                    Hey, can tell me about progress of project? I'm waiting for your response.
+                    Hey, can tell me about progress of project? I’m waiting for your response.
                   </p>
                   <p className="text-right text-sm text-gray-400">Dec, 12</p>
                 </div>
@@ -507,7 +508,7 @@ export function Content(props: { title: string }) {
                     </div>
                   </div>
                   <p className="my-2 text-sm text-gray-400">
-                    I am really impressed! Can't wait to see the final result.
+                    I am really impressed! Can’t wait to see the final result.
                   </p>
                   <p className="text-right text-sm text-gray-400">Dec, 12</p>
                 </div>

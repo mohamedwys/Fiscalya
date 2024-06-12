@@ -31,7 +31,7 @@ export const LandingHero = () => {
         </div>
       </div>
       <div className="text-sm mt-10 md:text-xl top- font-light text-zinc-500 space-y-5">
-      At Fiscalya, we understand the complexities of taxation and financial regulations. That's why we've developed a suite of online services to streamline your fiscal processes and empower your business to thrive in today's dynamic market. 
+      At Fiscalya, we understand the complexities of taxation and financial regulations. That’s why we’ve developed a suite of online services to streamline your fiscal processes and empower your business to thrive in today’s dynamic market. 
       </div>
       <div>
         <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>

@@ -28,7 +28,7 @@ const Home = () => {
           </h2>
           <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
             <Balancer>
-            This money flow diagram is designed to provide a clear visualization of how funds move from the initial customer to our company, facilitating a comprehensive study and analysis of financial transactions.
+            Designed to provide a clear visualization of how funds move.
             </Balancer>
           </h3>
         </div>

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import moment from "moment/moment";
 import css from "./Layout.module.css";
 import { BiSearch } from "react-icons/bi";

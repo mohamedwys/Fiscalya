@@ -97,7 +97,7 @@ export default function FAQ() {
                     Leveraging the Unique Characteristics of Taxation 
                 </h1>
                 <p className="text-zinc-500 font-poppins font-medium pb-[24px]">
-                At Fiscalya, we have a team of experienced tax professionals who are well-versed in the UAE's excise tax laws and regulations. We provide tailored solutions to meet the specific needs of our clients, ensuring that they are fully compliant with the tax authorities. Our services are designed to help businesses minimize their tax liabilities and maximize their profitability.
+                At Fiscalya, we have a team of experienced tax professionals who are well-versed in the UAE’s excise tax laws and regulations. We provide tailored solutions to meet the specific needs of our clients, ensuring that they are fully compliant with the tax authorities. Our services are designed to help businesses minimize their tax liabilities and maximize their profitability.
 
                 </p>
             </div>

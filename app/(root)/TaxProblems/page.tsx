@@ -17,7 +17,7 @@ const TaxProblems = async () => {
         <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
             <Balancer>
               <span className="bg-gradient-to-r from-zinc-400 to-zinc-600 bg-clip-text text-transparent">
-              We'll help you Solve your Tax Issues
+              we’ll help you Solve your Tax Issues
               </span>
             </Balancer>
           </h2>
@@ -49,12 +49,12 @@ const TaxProblems = async () => {
           
             <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
             <Balancer>
-               We'll Find the Best Solution for You
+            we’ll Find the Best Solution for You
             </Balancer>
             </h3>
-              We're committed to finding the best solution to your tax issue that works for you. We will only suggest a solution to address your tax problem if we think it's right for you. 
+            we’re committed to finding the best solution to your tax issue that works for you. We will only suggest a solution to address your tax problem if we think it’s right for you. 
               <br /><br />
-              If we don't think our services are necessary, we'll give you advice on how to handle your tax issue.
+              If we don’t think our services are necessary, we’ll give you advice on how to handle your tax issue.
            
           </div>
           <div>

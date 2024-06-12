@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { groupNumber, ordersData } from '../../data'
 import OrdersPieChart from '@/components/OrdersPieChart'

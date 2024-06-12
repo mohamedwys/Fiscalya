@@ -72,7 +72,7 @@ const AboutUs =  () => {
             </h3>
                We believe economic growth and social inclusion must always be looked at together and increased overall prosperity can only be achieved along with more equal opportunity and outcomes.  
               <br /><br />
-              Through our services, our wider influence and our approach to corporate responsibility, we're committed to supporting broad-based growth that empowers everyone to contribute to and benefit from economic success, both today and tomorrow.
+              Through our services, our wider influence and our approach to corporate responsibility, we’re committed to supporting broad-based growth that empowers everyone to contribute to and benefit from economic success, both today and tomorrow.
             </p>
           </div>
           

@@ -14,9 +14,9 @@ const TaxContent =  () => {
           <div className="text-center max-w-md">
             <p className="text-zinc-500">
               <strong>Direct Tax</strong><br />
-              Direct taxes are levied directly on an individual's income or wealth. These taxes are paid by the taxpayer to the government and cannot be transferred to another entity. 
+              Direct taxes are levied directly on an individual’s income or wealth. These taxes are paid by the taxpayer to the government and cannot be transferred to another entity. 
               <br /><br />
-              Direct taxes are typically imposed on income, profits, or wealth, and the rate of taxation varies based on the taxpayer's income level. Direct taxes are considered progressive, meaning that higher-income individuals pay a higher rate of tax.
+              Direct taxes are typically imposed on income, profits, or wealth, and the rate of taxation varies based on the taxpayer’s income level. Direct taxes are considered progressive, meaning that higher-income individuals pay a higher rate of tax.
             </p>
           </div>
           <div>
