@@ -1,43 +1,47 @@
 "use client";
 
+import { Point, Points } from "@react-three/drei";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
 export const projects = [
   {
-    title: "VAT",
+    title: "What is UAE Corporate Tax?",
     description:
-      "Streamline VAT compliance and maximize savings with our expert VAT consulting and advisory services.",
+      "The UAE Corporate Tax is a mandatory tax on the net income or net profit of taxable corporations or businesses. Known as corporate income tax or business profit tax in different regions, this tax impacts companies operating within the UAE.",
     link: "https://algochurn.com",
   },
   {
-    title: "Excise",
+    title: " Purpose of Introducing Corporate Tax in the UAE?",
     description:
-      "Navigate excise tax complexities and optimize compliance with our expert excise tax consulting solutions.",
+      "The Corporate Tax strengthens the UAE’s position as a leading global business hub and supports the nation’s core policy goals. Implementing the Corporate Tax regime aligns the UAE with global standards for tax accuracy and helps prevent harmful tax practices.",
     link: "https://algochurn.com",
   },
   {
-    title: "Corporate Tax",
+    title: "What Is the UAE Corporate Tax Rate?",
     description:
-      "Unlock tax optimization and ensure compliance with our tailored corporate tax consulting solutions.",
+      "The corporate tax rate is as follows:"
+      +"A margin of 0% for taxable income up to AED 375,000."
+      +"A percentage of 9% for taxable income above AED 375,000.",
+
     link: "https://algochurn.com",
   },
   {
-    title: "Tax Declaration ! Refund",
+    title: "Is a Private Person’s Salary ! Income Subject to UAE Corporate Tax?",
     description:
-      "Ensure accurate tax declarations and maximize refunds with our efficient tax declaration and refund services.",
+      "The UAE corporate tax does not apply to individual salaries and other sources of personal employment income.",
     link: "https://algochurn.com",
   },
   {
-    title: "Customs Duties | Formalities",
+    title: "Is Income Earned by a Foreign Investor Subject to the UAE Corporate Tax?",
     description:
-      "Simplify customs duties and streamline formalities with our comprehensive customs consulting solutions.",
+      "The UAE Corporate Tax does not apply to foreign investors' income from capital gains, interest, dividends, and royalties.",
     link: "https://algochurn.com",
   },
   {
-    title: "Transfert Pricing",
+    title: " Under the UAE Corporate Tax Regime, is the Real Estate Sector Subject?",
     description:
-      "Ensure compliance and optimize profitability with our comprehensive transfer pricing solutions.",
+      "UAE businesses involved in real estate management, construction, development, agency, and brokerage activities are subject to the UAE Corporate Tax.",
     link: "https://algochurn.com",
   },
   // 
@@ -59,7 +63,7 @@ export const HoverEffect = () => {
             <AnimatePresence>
               {hoveredIndex === idx && (
                 <motion.span
-                  className="absolute inset-0 h-full w-full bg-[#BCFD4C] block  rounded-3xl"
+                  className="absolute inset-0 h-full w-full bg-[#295872] block  rounded-3xl"
                   layoutId="hoverBackground" // required for the background to follow
                   initial={{ opacity: 0 }}
                   animate={{
@@ -73,13 +77,13 @@ export const HoverEffect = () => {
                 />
               )}
             </AnimatePresence>
-            <div className=" rounded-2xl h-full w-full p-4 overflow-hidden bg-[#474747] border border-transparent group-hover:border-slate-700 relative z-50">
+            <div className=" rounded-2xl h-full w-full p-4 overflow-hidden bg-[#adb5bd] border border-transparent group-hover:border-slate-700 relative z-50">
               <div className="relative z-50">
                 <div className="p-4">
-                  <h4 className="text-neutral-200 font-bold tracking-wide mt-4">
+                  <h4 className="text-zinc-600 text-center font-bold tracking-wide mt-4">
                     {project.title}
                   </h4>
-                  <p className="mt-8 text-neutral-200 font-bold tracking-wide leading-relaxed text-sm">
+                  <p className="mt-8 text-zinc-500 font-bold text-center tracking-wide leading-relaxed text-sm">
                     {project.description}
                   </p>
                 </div>

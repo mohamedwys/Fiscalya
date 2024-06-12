@@ -76,10 +76,10 @@ const items = [
         answer: `In today's global business environment, transfer pricing has become a critical aspect of corporate tax planning and compliance. At Fiscalya, we offer comprehensive transfer pricing services to help our clients navigate the complexities of this specialized field and ensure they remain compliant with the relevant regulations.`,
         points: [
         "Compliance: Prepare necessary documentation and ensure adherence to UAE regulations. Represent clients in audits and disputes.",
-        <strong>Planning and Optimization</strong>, "Improve transfer pricing policies, develop strategies to minimize tax, and advise on appropriate methods.",
-        <strong>Studies and Benchmarking</strong>, "Conduct arm's-length pricing studies, perform benchmarking, and prepare reports.",
-        <strong>Dispute Resolution</strong>, "Represent clients in disputes, prepare position papers, and negotiate with tax authorities.",
-        <strong>Ongoing Support</strong>, "Provide updates on regulations, offer strategic tax advice, and collaborate with in-house tax teams."
+        "Improve transfer pricing policies, develop strategies to minimize tax, and advise on appropriate methods.",
+        "Conduct arm's-length pricing studies, perform benchmarking, and prepare reports.",
+        "Represent clients in disputes, prepare position papers, and negotiate with tax authorities.",
+        "Provide updates on regulations, offer strategic tax advice, and collaborate with in-house tax teams."
         ],
     }
     
@@ -124,7 +124,7 @@ export default function FAQ() {
                                             <Image
                                                 src={Plus}
                                                 alt="See more"
-                                                className="h-10 w-10 lg:w-6 lg:h-6"
+                                                className="h-10 w-10 lg:w-6 lg:h-6 "
                                             />
                                         </span>
                                     </Accordion.Trigger>

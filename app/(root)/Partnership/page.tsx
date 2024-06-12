@@ -4,6 +4,7 @@ import Image from "next/image";
 import { redirect } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
+import Balancer from "react-wrap-balancer";
 
 const Partnership = async () => {
   const { userId } = auth();
@@ -14,16 +15,23 @@ const Partnership = async () => {
     <>
     
       <section className="container mx-auto py-12">
-        <div className="flex flex-col items-center justify-center gap-6">
-          <Image src="/assets/icons/global.svg" alt="Partnership" width={100} height={100} />
-          <h2 className="text-2xl font-bold text-zinc-600">Become a Partner</h2>
-          <p className="text-gray-600 text-center">
+        <div className="flex flex-col items-center gap-6 text-center">
+          <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
+            <Balancer>
+              <span className="bg-gradient-to-r from-zinc-400 to-zinc-600 bg-clip-text text-transparent">
+              Become a Partner
+              </span>
+            </Balancer>
+          </h2>
+          <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
+            <Balancer>
             Join our network of professionals and leverage our platform to provide tailored solutions to clients.
-          </p>
+            </Balancer>
+          </h3>
         </div>
 
         <div className="mt-12">
-          <h3 className="text-xl font-bold text-zinc-500">Benefits of Partnership</h3>
+          <h3 className="text-xl font-bold text-center text-zinc-500">Benefits of Partnership</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
             <div className="bg-[#adb5bd] shadow-md text-center rounded-lg p-6">
               <Image className="inline-block mb-8" src="/assets/icons/world.svg" alt="Reach" width={50} height={50} />

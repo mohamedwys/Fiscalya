@@ -1,0 +1,42 @@
+.fc .fc-scrollgrid,
+.fc .fc-toolbar,
+.fc .fc-daygrid-day-frame {
+  border-radius: 8px; /* Adjust the radius as needed */
+}
+.fc-theme-standard .fc-scrollgrid,
+.fc-toolbar-title,
+.fc-button,
+.fc-daygrid-day-number,
+.fc-event-title,
+.fc-col-header-cell-cushion,
+.fc-timegrid-slot-label-cushion,
+.fc-timegrid-slot-label-frame {
+  color: #e5e7eb; /* This is neutral-200 */
+  font-weight: bold;
+}
+.calendar-container>div{
+    margin: auto;
+    width: 100%;
+    padding: 0rem 5rem;
+    max-width: 1100px;
+    border-radius: 8px; /* Match this with the above radius */
+    overflow: hidden; /* Ensure the rounding applies to all child elements */
+}
+.fc-event{
+    background: var(--orange-gradient)!important;
+}
+.fc .fc-timegrid-slot{
+    height: 4rem!important;
+}
+td{
+    border : 1px solid var(--orange)!important
+}
+.fc-theme-standard .fc-scrollgrid {
+    background-color: #6E6E6E; 
+  }
+  
+.calendar-container {
+    background-color: #6E6E6E; 
+    border-radius: 8px; /* Adjust the radius as needed */
+    padding: 14px; 
+}

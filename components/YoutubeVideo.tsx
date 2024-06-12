@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Play from '@/public/assets/icons/play.svg';
+import Youtube from '@/public/assets/icons/youtube.svg';
 import Balancer from 'react-wrap-balancer';
 
 interface YoutubeVideoProps {
@@ -38,17 +38,18 @@ export default function YoutubeVideo(props: YoutubeVideoProps) {
     object-fit: cover;
   }
   
-  .play {
-    display: flex;
-    justify-content: center;
-    display: block;
+  .Youtube {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 10vw;
-    width: 100%;
+    width: 30%;
   }
   </style>
   <a style="color: rgb(var(--primary))" href=https://www.youtube.com/embed/${videoHash}?autoplay=1>
     <img class="thumbnail" src="https://img.youtube.com/vi/${videoHash}/hqdefault.jpg" alt='${title || ''}'>
-    <img class="play" src="${Play}" alt="Play the video">
+    <img class="Youtube" src="assets/icons/youtube.svg" alt="Play the video">
   </a>`;
   
     
@@ -66,13 +67,13 @@ export default function YoutubeVideo(props: YoutubeVideoProps) {
         <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
           <Balancer>
             <span className="bg-gradient-to-r from-zinc-400 to-zinc-600 bg-clip-text text-transparent">
-              Buy Credits
+            UAE Corporate Tax Registration
             </span>
           </Balancer>
         </h2>
         <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
           <Balancer>
-            Choose a credit package that suits your needs!
+          Step by Step
           </Balancer>
         </h3>
       </div>

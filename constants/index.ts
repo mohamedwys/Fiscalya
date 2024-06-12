@@ -15,6 +15,11 @@ export const navLinks = [
     icon: "/assets/icons/phone-outgoing.svg",
   },
   {
+    label: "Calendar",
+    route: "/Calendar",
+    icon: "/assets/icons/calendar.svg",
+  },
+  {
     label: "Partnership",
     route: "/Partnership",
     icon: "/assets/icons/handshake.svg",

@@ -25,7 +25,7 @@ export default function LandingPage (): JSX.Element{
         <FAQ />
         <HoverEffect />
         <WobbleCardDemo  />
-        <YoutubeVideo url={"https://www.youtube.com/watch?v=YIm6Km-TpbA"}/>
+        <YoutubeVideo url={"https://www.youtube.com/watch?v=mSOLdtryA6Q&list=PLsPIJCUdzSaJjJBmhEo3Dg0ol258-bl90"}  />
         <PricingSection />
         <Lottie
                   animationData={animationData}
