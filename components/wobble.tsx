@@ -10,7 +10,7 @@ export function WobbleCardDemo() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
       <WobbleCard
-        containerClassName="col-span-1 lg:col-span-2 h-full bg-[#295872] min-h-[500px] lg:min-h-[300px] relative"
+        containerClassName="col-span-1 lg:col-span-2 h-full bg-[#2C3E50] min-h-[500px] lg:min-h-[300px] relative"
         className=""
       >
         <div className="max-w-xs flex items-center justify-between">
@@ -25,7 +25,7 @@ export function WobbleCardDemo() {
         </ul>
        
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-[#BCFD4C]">
+      <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-[#fd746c]">
         <h2 className="text-top-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-zinc-700">
           Ask Your Questions
         </h2>
@@ -35,7 +35,7 @@ export function WobbleCardDemo() {
           
         </ul>
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-[#BCFD4C]">
+      <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-[#fd746c]">
         <h2 className="text-top-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-zinc-700">
           Instant, Accurate Responses
         </h2>
@@ -45,7 +45,7 @@ export function WobbleCardDemo() {
           
         </ul>
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 lg:col-span-2 h-full bg-[#295872] min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] relative">
+      <WobbleCard containerClassName="col-span-1 lg:col-span-2 h-full bg-[#2C3E50] min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] relative">
         <div className="max-w-xs flex items-center justify-between">
           <h2 className="text-left text-balance text-base md:text-xl lg:text-4xl font-semibold tracking-[-0.015em] text-neutral-200">
             Future of Tax and Legal Assistance

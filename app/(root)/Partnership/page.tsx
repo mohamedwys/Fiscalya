@@ -77,8 +77,8 @@ const Partnership = async () => {
         <div className="mt-12 flex justify-center">
           <SignedIn>
                 <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#BCFD4C_0%,#004AAD_50%,#BCFD4C_100%)]" />
-                  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#adb5bd] px-6 py-1 text-sm font-bold text-gray-700 backdrop-blur-3xl">
+                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#2C3E50_0%,#004AAD_50%,#fd746c_100%)]" />
+                  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-neutral-200 px-6 py-1 text-sm font-bold text-gray-700 backdrop-blur-3xl">
                     Apply Now
                   </span>
                 </button>

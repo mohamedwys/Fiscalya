@@ -15,7 +15,7 @@ export const LandingHero = () => {
     <div className="text-neutral-200 font-bold py-36 text-center space-y-5">
       <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl space-y-5 font-extrabold text-zinc-500 bg-clip-text bg-zinc-500">
         <h1>Fiscalya Online Services</h1>
-        <div className="text-transparent  bg-clip-text bg-gradient-to-r from-[#F58F7C] via-[#F2C4CE] to-[#F58F7C]">
+        <div className="text-transparent  bg-clip-text bg-gradient-to-r from-[#2C3E50] via-[#fd746c] to-[#2C3E50]">
           <TypewriterComponent
             options={{
               strings: [
@@ -36,8 +36,8 @@ export const LandingHero = () => {
       <div>
         <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
         <button className="relative mt-12 inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#BCFD4C_0%,#004AAD_50%,#BCFD4C_100%)]" />
-            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#ced4da] px-6 py-1 text-sm font-bold text-zinc-500 backdrop-blur-3xl">
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#2C3E50_0%,#004AAD_50%,#fd746c_100%)]" />
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-neutral-200 px-6 py-1 text-sm font-bold text-zinc-500 backdrop-blur-3xl">
              Get Started
             </span>
           </button>

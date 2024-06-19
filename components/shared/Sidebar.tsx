@@ -20,7 +20,7 @@ const font = Montserrat({
 const Sidebar = () => {
   const pathname = usePathname();
   const logoDivStyling = "flex-1 flex items-center pl-[20px]";
-  const logoStyling = "w-[45px] h-[45px] bg-gradient-to-br from-[#BCFD4C] via-cyan-600 to-[#BCFD4C]";
+  const logoStyling = "w-[45px] h-[45px] bg-gradient-to-br from-[#2C3E50] via-[#fd746c] to-[#2C3E50]";
 
   return (
     <aside className="sidebar">
@@ -54,7 +54,7 @@ const Sidebar = () => {
 
                 return (
                   <li key={link.route} className={`sidebar-nav_element group ${
-                    isActive ? 'bg-[#295872] text-[#BCFD4C]' : 'text-neutral-200'
+                    isActive ? 'bg-[#fd746c] text-[#2C3E50]' : 'text-neutral-200'
                   }`}>
                     <Link className="sidebar-link" href={link.route}>
                       <Image 
@@ -77,7 +77,7 @@ const Sidebar = () => {
 
                 return (
                   <li key={link.route} className={`sidebar-nav_element group ${
-                    isActive ? 'bg-[#BCFD4C] text-zinc-600' : 'text-neutral-200'
+                    isActive ? 'bg-[#fd746c] text-[#2C3E50]' : 'text-neutral-200'
                   }`}>
                     <Link className="sidebar-link" href={link.route}>
                       <Image 

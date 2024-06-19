@@ -17,7 +17,7 @@ const font = Montserrat({
 
 const links = ["AboutUs", "BusinessSolutions", "TaxProblems"];
 const logoDivStyling = "flex-1 flex items-center pl-[20px]";
-const logoStyling = "w-[45px] h-[45px] bg-gradient-to-br from-[#F58F7C] via-[#F2C4CE] to-[#F58F7C]";
+const logoStyling = "w-[45px] h-[45px] bg-gradient-to-br from-[#2C3E50] via-[#fd746c] to-[#2C3E50]";
 
 export const LandingNavbar = () => {
   const { isSignedIn } = useAuth();
@@ -63,17 +63,17 @@ export const LandingNavbar = () => {
 
           <div className="flex-grow flex items-center justify-center">
             <Link href="/AboutUs">
-              <span className="mx-4 text-sm font-bold text-zinc-500 hover:text-zinc-600 transition duration-150 ease-in-out">
+              <span className="mx-4 text-sm font-bold text-zinc-500 hover:text-[#fd746c] transition duration-150 ease-in-out">
                 About Us
               </span>
             </Link>
             <Link href="/BusinessSolutions">
-              <span className="mx-4 text-sm font-bold text-zinc-500 hover:text-zinc-600 transition duration-150 ease-in-out">
+              <span className="mx-4 text-sm font-bold text-zinc-500 hover:text-[#fd746c] transition duration-150 ease-in-out">
                 Business Solutions
               </span>
             </Link>
             <Link href="/TaxProblems">
-              <span className="mx-4 text-sm font-bold text-zinc-500 hover:text-zinc-600 transition duration-150 ease-in-out">
+              <span className="mx-4 text-sm font-bold text-zinc-500 hover:text-[#fd746c] transition duration-150 ease-in-out">
                 Tax Problems
               </span>
             </Link>
@@ -82,8 +82,8 @@ export const LandingNavbar = () => {
             <div className="absolute top-0 right-8 mt-12">
               <Link href={isSignedIn ? "/Home" : "/sign-up"}>
                 <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#BCFD4C_0%,#004AAD_50%,#BCFD4C_100%)]" />
-                  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#ced4da] px-6 py-1 text-sm font-bold text-zinc-500 backdrop-blur-3xl">
+                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#2C3E50_0%,#004AAD_50%,#fd746c_100%)]" />
+                  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-neutral-200 px-6 py-1 text-sm font-bold text-zinc-500 backdrop-blur-3xl">
                     Login
                   </span>
                 </button>

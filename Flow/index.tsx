@@ -116,7 +116,7 @@ const UpdateNode: React.FC = () => {
         maxZoom={4}
         style={{ height: '100%', width: '100%' }}
       >
-        <Background color="#404040" gap={16} />
+        <Background color="#2C3E50" gap={16} />
         <Controls />
         {selectedNode && (
           <div className={styles.controls}>

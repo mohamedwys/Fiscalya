@@ -5,13 +5,13 @@ import { SparklesCore } from "@/components/ui/sparkles";
 export function SparklesPreview() {
   return (
     <div className="h-[20rem] w-full bg-neutral-200 flex flex-col items-center justify-center overflow-hidden rounded-md">
-      <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-[#966F60] relative z-20">
+      <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-[#fd746c] relative z-20">
         Fiscalya
       </h1>
       <div className="w-[40rem] h-40 relative">
         {/* Gradients */}
-        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#966F60] to-transparent h-[2px] w-3/4 blur-sm" />
-        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#966F60] to-transparent h-px w-3/4" />
+        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#fd746c] to-transparent h-[2px] w-3/4 blur-sm" />
+        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#fd746c] to-transparent h-px w-3/4" />
         <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-zinc-600 to-transparent h-[5px] w-1/4 blur-sm" />
         <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-zinc-600 to-transparent h-px w-1/4" />
 
