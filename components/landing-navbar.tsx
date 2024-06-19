@@ -17,7 +17,7 @@ const font = Montserrat({
 
 const links = ["AboutUs", "BusinessSolutions", "TaxProblems"];
 const logoDivStyling = "flex-1 flex items-center pl-[20px]";
-const logoStyling = "w-[45px] h-[45px] bg-gradient-to-br from-[#BCFD4C] via-cyan-600 to-[#BCFD4C]";
+const logoStyling = "w-[45px] h-[45px] bg-gradient-to-br from-[#F58F7C] via-[#F2C4CE] to-[#F58F7C]";
 
 export const LandingNavbar = () => {
   const { isSignedIn } = useAuth();

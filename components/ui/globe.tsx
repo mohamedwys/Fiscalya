@@ -221,7 +221,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
     return () => {
       clearInterval(interval);
     };
-  }, [globeRef.current, globeData]);
+  }, [globeData, data.length]);
 
   return (
     <>

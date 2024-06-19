@@ -15,7 +15,7 @@ export const LandingHero = () => {
     <div className="text-neutral-200 font-bold py-36 text-center space-y-5">
       <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl space-y-5 font-extrabold text-zinc-500 bg-clip-text bg-zinc-500">
         <h1>Fiscalya Online Services</h1>
-        <div className="text-transparent  bg-clip-text bg-gradient-to-r from-[#BCFD4C] via-cyan-600 to-[#BCFD4C]">
+        <div className="text-transparent  bg-clip-text bg-gradient-to-r from-[#F58F7C] via-[#F2C4CE] to-[#F58F7C]">
           <TypewriterComponent
             options={{
               strings: [

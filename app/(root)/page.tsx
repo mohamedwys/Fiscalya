@@ -17,7 +17,7 @@ export default function LandingPage (): JSX.Element{
   
   return (
     
-      <div className="h-full bg-[#ced4da]">
+      <div className="h-full bg-neutral-200">
         <LandingNavbar />
         <LandingHero />   
         <GlobeDemo />

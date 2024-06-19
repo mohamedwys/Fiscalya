@@ -97,7 +97,7 @@
 }
 
 .root {
-  @apply flex min-h-screen w-full flex-col bg-[#ced4da] lg:flex-row;
+  @apply flex min-h-screen w-full flex-col bg-neutral-200 lg:flex-row;
 }
 
 .root-container {
