@@ -26,7 +26,7 @@ export function Chat() {
         setMessageHistory([...messageHistory, `User: ${input}`]);
     
         // Envoyez une requête à l'API GPT-3
-        axios.post('http://localhost:8090/ai/message?sessionId=665cc64bcf8921d4a4044645'
+        axios.post('https://fiscalya-spring.onrender.com/ai/message?sessionId=665cc64bcf8921d4a4044645'
             + '&message=' + input, {})
         .then((response) => {
             // Ajoutez la réponse de l'API à l'historique des messages
@@ -40,7 +40,7 @@ export function Chat() {
     };
 
     useEffect(() => {
-        axios.get("http://localhost:8090/ai/user-active-chat-session?userId=665cc64bcf8921d4a4044645")
+        axios.get("https://fiscalya-spring.onrender.com/ai/user-active-chat-session?userId=665cc64bcf8921d4a4044645")
         .then((response) => {
             // console.log(response.data.messages)
             setMessageHistory(response.data.messages); // Mettez à jour l'état de messageHistory avec les données reçues
