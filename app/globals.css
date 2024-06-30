@@ -331,7 +331,7 @@
   }
 
   .sidebar-nav_element {
-    @apply flex-center p-16-semibold w-full whitespace-nowrap rounded-full bg-cover  transition-all hover:bg-purple-100 hover:shadow-inner;
+    @apply flex-center p-16-semibold w-full whitespace-nowrap rounded-full bg-cover transition-all hover:bg-gradient-to-r from-[#6A82FB] to-[#CB837F] hover:shadow-inner;
   }
 
   .sidebar-link {
@@ -370,11 +370,12 @@
   display: flex;
   flex-flow: row-reverse;
   gap: 12px;
+  
 }
 
 .cl-userButtonOuterIdentifier {
   font-size: 16px;
   font-weight: 600;
-  color: #384262;
+  color: #ffffff;
 }
 }

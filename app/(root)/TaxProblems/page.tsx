@@ -16,8 +16,8 @@ const TaxProblems = async () => {
         <div className="flex flex-col items-center justify-center gap-6">
         <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
             <Balancer>
-              <span className="bg-gradient-to-r from-zinc-400 to-zinc-600 bg-clip-text text-transparent">
-              we’ll help you Solve your Tax Issues
+              <span className="bg-gradient-to-r from-[#6A82FB] to-[#CB837F] bg-clip-text text-transparent">
+              We’ll help you Solve your Tax Issues
               </span>
             </Balancer>
           </h2>
@@ -30,13 +30,13 @@ const TaxProblems = async () => {
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
             <a href="#personal-tax">
-              <div className="bg-[#adb5bd] shadow-md rounded-lg p-6 flex flex-col items-center">
+              <div className="bg-neutral-300 shadow-md rounded-lg p-6 flex flex-col items-center">
                 <Image className="inline-block mb-4" src="/assets/icons/Personal.svg" alt="Understanding" width={50} height={50} />
                 <h4 className="text-lg font-bold text-gray-800">Your Personal Tax</h4>
               </div>
             </a>
             <a href="#business-tax">
-              <div className="bg-[#adb5bd] shadow-md rounded-lg p-6 flex flex-col items-center">
+              <div className="bg-neutral-300 shadow-md rounded-lg p-6 flex flex-col items-center">
                 <Image className="inline-block mb-4" src="/assets/icons/busi.svg" alt="Analysis" width={50} height={50} />
                 <h4 className="text-lg font-bold text-gray-800">Your Business Tax</h4>
               </div>
@@ -75,7 +75,7 @@ const TaxProblems = async () => {
         <div id="personal-tax" className="flex flex-col items-center gap-6 text-center">
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
-              <span className="bg-gradient-to-r from-zinc-400 to-zinc-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#6A82FB] to-[#CB837F] bg-clip-text text-transparent">
               Resolve your Personal Tax Issues
               </span>
             </Balancer>
@@ -123,7 +123,7 @@ const TaxProblems = async () => {
         <div id="business-tax" className="flex flex-col items-center gap-6 text-center mt-20">
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
-              <span className="bg-gradient-to-r from-zinc-400 to-zinc-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#6A82FB] to-[#CB837F] bg-clip-text text-transparent">
               The Expertise to Resolve your Business Tax Issues
               </span>
             </Balancer>
@@ -258,48 +258,6 @@ const TaxProblems = async () => {
     </li>
   </ul>
 </div>
-
-        {/* <div className="mt-12">
-          <h3 id="personal-tax" className="text-xl font-bold text-center text-zinc-500">Resolve your Personal Tax Issues</h3>
-          <p className="text-gray-600 text-center mt-4">
-          Whether you just received a letter from the Authorities, an audit, or need help with your tax debt, we can help.
-          </p>
-          <ul className="list-disc pl-6 text-gray-600 mt-4">
-            <li>Letter from the IRS</li>
-            <li>IRS Audit</li>
-            <li>Tax Debt Resolution</li>
-            <li>Corrections to Prior Year Tax Returns</li>
-          </ul>
-        </div>
-
-        <div className="mt-12">
-          <h3 id="business-tax" className="text-xl font-bold text-center text-zinc-500">The Expertise to Resolve your Business Tax Issues</h3>
-          <p className="text-gray-600 text-center mt-4">
-          We help businesses like yours resolve these and related tax issues. Ask us today about how we can assist you.
-          </p>
-          <ul className="list-disc pl-6 text-gray-600 mt-4">
-            <li>IRS Issues</li>
-            <li>IRS Letter / Inquiry</li>
-            <li>Tax Lien</li>
-            <li>Audit Representation</li>
-            <li>Collections</li>
-            <li>Installment Agreement</li>
-            <li>Penalty Abatement</li>
-            <li>Offer-in-Compromise</li>
-            <li>Report Corrections</li>
-            <li>State & Local Taxes</li>
-            <li>Franchise Tax</li>
-            <li>Sales Tax</li>
-            <li>Collections</li>
-            <li>Liquor Tax</li>
-            <li>Payroll Taxes</li>
-            <li>Prior Period Reporting</li>
-            <li>Payroll Tax Audit</li>
-            <li>Unemployment</li>
-            <li>Workmans Comp</li>
-            <li>Collections</li>
-          </ul>
-        </div> */}
       </section>
       <Footer />
     </>

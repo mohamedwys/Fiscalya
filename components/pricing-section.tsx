@@ -29,9 +29,9 @@ export function PricingSection(): JSX.Element {
     >
       <div className="container grid max-w-6xl gap-4 md:gap-8">
         <div className="flex flex-col items-center gap-6 text-center">
-          <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+          <h2 className="mt-10 font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
-              <span className="bg-gradient-to-r from-zinc-400 to-zinc-600 bg-clip-text text-transparent">
+              <span className=" bg-gradient-to-r from-[#6A82FB] to-[#CB837F] bg-clip-text text-transparent">
                 Buy Credits
               </span>
             </Balancer>
@@ -64,7 +64,7 @@ export function PricingSection(): JSX.Element {
                   "border-pink-600/60 bg-gradient-to-r from-pink-600/10 to-purple-400/10"
               )}
             >
-              <CardHeader className="overflow-hidden rounded-t-lg bg-gradient-to-r from-pink-600/10 to-purple-400/10">
+              <CardHeader className="overflow-hidden rounded-t-lg bg-gradient-to-r from-[#6A82FB] to-[#CB837F] text-neutral-200">
                 <CardTitle className="font-urbanist text-2xl tracking-wide">
                   <Balancer>{plan.name}</Balancer>
                 </CardTitle>

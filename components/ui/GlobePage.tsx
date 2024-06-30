@@ -11,7 +11,7 @@ const World = dynamic(() => import("./globe").then((m) => m.World), {
 export function GlobeDemo() {
   const globeConfig = {
     pointSize: 4,
-    globeColor: "#474747",
+    globeColor: "#000000",
     showAtmosphere: true,
     atmosphereColor: "#FFFFFF",
     atmosphereAltitude: 0.1,
@@ -412,7 +412,7 @@ export function GlobeDemo() {
           }}
           className="div"
         >
-          <h2 className="text-center text-xl md:text-4xl font-bold text-zinc-500 dark:text-white">
+          <h2 className="text-center text-xl md:text-4xl font-bold bg-gradient-to-r from-[#6A82FB] to-[#CB837F] bg-clip-text text-transparent">
             Worldwide Solutions
           </h2>
           <p className="text-center text-base md:text-lg font-semibold text-zinc-500 dark:text-neutral-200 max-w-md mt-2 mx-auto">

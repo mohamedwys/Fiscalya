@@ -1,3 +1,5 @@
+
+
 import { PricingSection } from "@/components/pricing-section";
 
 export default function PricingPage(): JSX.Element {

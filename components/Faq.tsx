@@ -6,7 +6,7 @@ import Plus from "@/public/assets/icons/Plus.svg"
 
 const items = [
     {
-        question: "Advisor PRO BOT Services 24/7",
+        question: "Taxpert AI Services 24/7",
         answer: `Taxable corporations and individuals in the UAE must outsource accredited tax services to remain compliant with the Federal Tax Authority's regulations and standards, and to avoid penalties for tax delays or non-compliance. Our dedicated tax BOT is trained to strategize and implement customized tax solutions that are tailored to meet our clients' specific needs. We offer expert consultant services, and our team will be glad to assist you.`,
         points: [
             "24/7 availability for all tax-related queries.",
@@ -90,7 +90,7 @@ export default function FAQ() {
     return (
         <div className="flex flex-col w-full py-[48px] lg:py-[60px] lg:flex-row lg:gap-x-6">
             <div className="lg:w-[44%] lg:py-[32px] lg:pr-[56px]">
-                <h3 className="text-[#fd746c] font-poppins text-[17px] font-bold lg:text-base">
+                <h3 className="text-[#CB837F] font-poppins text-[17px] font-bold lg:text-base">
                     Embracing Tax Efficiency
                 </h3>
                 <h1 className="py-4 text-3xl font-poppins font-semibold text-[#172026] lg:text-[40px] lg:leading-[58px]">

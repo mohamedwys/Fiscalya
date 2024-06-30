@@ -1,7 +1,7 @@
 'use client'
 
-import { Input } from "@/components/ui/input"
-import { useChat } from "ai/react"
+// import { Input } from "@/components/ui/input"
+// import { useChat } from "ai/react"
 import { useRef, useState, useEffect } from 'react'
 import Balancer from "react-wrap-balancer"
 import axios from 'axios'
@@ -62,8 +62,8 @@ export function Chat() {
                 <div className="flex flex-col items-center gap-6 text-center">
                 <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
                     <Balancer>
-                        <span className="bg-gradient-to-r from-zinc-400 to-zinc-600 bg-clip-text text-transparent">
-                            Fiscalya Advisor Pro
+                        <span className="bg-gradient-to-r from-[#6A82FB] to-[#CB837F] bg-clip-text text-transparent">
+                            Taxpert Advisor 
                         </span>
                     </Balancer>
                 </h2>

@@ -12,6 +12,9 @@ import TaxContent from "@/components/TaxContent";
 import FAQ from "@/components/Faq";
 import { PricingSection } from "@/components/pricing-section";
 import YoutubeVideo from "@/components/YoutubeVideo";
+import { Card } from "@/components/card";
+import Navbar from "@/components/navbar";
+import FAQQ from "@/components/faqq";
 
 export default function LandingPage (): JSX.Element{ 
   
@@ -19,14 +22,17 @@ export default function LandingPage (): JSX.Element{
     
       <div className="h-full bg-neutral-200">
         <LandingNavbar />
+        
         <LandingHero />   
         <GlobeDemo />
-        <TaxContent  />
-        <FAQ />
-        <HoverEffect />
+        <Card/>
         <WobbleCardDemo  />
+        <FAQ />
+        <TaxContent  />
+        <HoverEffect />
         <YoutubeVideo url={"https://www.youtube.com/watch?v=mSOLdtryA6Q&list=PLsPIJCUdzSaJjJBmhEo3Dg0ol258-bl90"}  />
         <PricingSection />
+        <FAQQ />
         <Lottie
                   animationData={animationData}
                   width={50}

@@ -13,7 +13,7 @@ const Home = () => {
   
   return (
     <section
-      id="pMoney-Flow"
+      id="Money-Flow"
       aria-label="Money-Flow"
       className="w-full"
     >

@@ -5,7 +5,7 @@ export const navLinks = [
     icon: "/assets/icons/layout-dashboard.svg",
   },
   {
-    label: "Advisor Pro",
+    label: "Taxpert AI",
     route: "/Chat-Quick",
     icon: "/assets/icons/bot-message-square.svg",
   },

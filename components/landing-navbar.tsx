@@ -17,7 +17,7 @@ const font = Montserrat({
 
 const links = ["AboutUs", "BusinessSolutions", "TaxProblems"];
 const logoDivStyling = "flex-1 flex items-center pl-[20px]";
-const logoStyling = "w-[45px] h-[45px] bg-gradient-to-br from-[#2C3E50] via-[#fd746c] to-[#2C3E50]";
+const logoStyling = "w-[45px] h-[45px] bg-gradient-to-br from-[#6A82FB] to-[#CB837F]";
 
 export const LandingNavbar = () => {
   const { isSignedIn } = useAuth();
@@ -60,24 +60,6 @@ export const LandingNavbar = () => {
               </div>
             </div>
           </div>
-
-          <div className="flex-grow flex items-center justify-center">
-            <Link href="/AboutUs">
-              <span className="mx-4 text-sm font-bold text-zinc-500 hover:text-[#fd746c] transition duration-150 ease-in-out">
-                About Us
-              </span>
-            </Link>
-            <Link href="/BusinessSolutions">
-              <span className="mx-4 text-sm font-bold text-zinc-500 hover:text-[#fd746c] transition duration-150 ease-in-out">
-                Business Solutions
-              </span>
-            </Link>
-            <Link href="/TaxProblems">
-              <span className="mx-4 text-sm font-bold text-zinc-500 hover:text-[#fd746c] transition duration-150 ease-in-out">
-                Tax Problems
-              </span>
-            </Link>
-          </div>
           <div className="flex items-center justify-end">
             <div className="absolute top-0 right-8 mt-12">
               <Link href={isSignedIn ? "/Home" : "/sign-up"}>
@@ -95,3 +77,23 @@ export const LandingNavbar = () => {
     </>
   );
 };
+
+
+
+          {/* <div className="flex-grow flex items-center justify-center">
+            <Link href="/AboutUs">
+              <span className="mx-4 text-sm font-bold text-zinc-500 hover:text-[#fd746c] transition duration-150 ease-in-out">
+                About Us
+              </span>
+            </Link>
+            <Link href="/BusinessSolutions">
+              <span className="mx-4 text-sm font-bold text-zinc-500 hover:text-[#fd746c] transition duration-150 ease-in-out">
+                Business Solutions
+              </span>
+            </Link>
+            <Link href="/TaxProblems">
+              <span className="mx-4 text-sm font-bold text-zinc-500 hover:text-[#fd746c] transition duration-150 ease-in-out">
+                Tax Problems
+              </span>
+            </Link>
+          </div> */}

@@ -32,11 +32,11 @@ td{
     border : 1px solid var(--orange)!important
 }
 .fc-theme-standard .fc-scrollgrid {
-    background-color: #6E6E6E; 
+    background-color: #2C3E50; 
   }
   
 .calendar-container {
-    background-color: #6E6E6E; 
+    background-color: #2C3E50; 
     border-radius: 8px; /* Adjust the radius as needed */
     padding: 14px; 
 }

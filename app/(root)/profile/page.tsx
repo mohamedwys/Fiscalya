@@ -1,9 +1,8 @@
-import { auth } from "@clerk/nextjs/server";
+/* eslint-disable @next/next/no-async-client-component */
+
+
 import Image from "next/image";
-import { redirect } from "next/navigation";
-import { Metadata } from "next";
 import Header from "@/components/shared/Header";
-import { getUserById } from "@/lib/actions/user.actions";
 
 interface SearchParamProps {
   searchParams: { page?: string };
@@ -15,28 +14,6 @@ interface User {
 }
 
 const Profile = async () => {
-  
-  // const { userId } = auth();
-
-  // if (!userId) {
-  //   redirect("/sign-in");
-  //   return null;
-  // }
-
-  // let user: User | null = null;
-
-  // try {
-  //   user = await getUserById(userId);
-  // } catch (error) {
-  //   console.error('Failed to fetch user profile:', error);
-  //   // Handle error, e.g., redirect to an error page or show a message
-  //   return <div>Error loading profile. Please try again later.</div>;
-  // }
-
-  // if (!user) {
-  //   return <div>User not found.</div>;
-  // }
-
   return (
     <>
       <Header title="Profile" />

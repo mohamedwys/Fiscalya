@@ -2,7 +2,7 @@
 
 import { Montserrat } from "next/font/google";
 import { navLinks } from '@/constants'
-import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+import { SignedIn, UserButton } from '@clerk/nextjs'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -20,7 +20,7 @@ const font = Montserrat({
 const Sidebar = () => {
   const pathname = usePathname();
   const logoDivStyling = "flex-1 flex items-center pl-[20px]";
-  const logoStyling = "w-[45px] h-[45px] bg-gradient-to-br from-[#2C3E50] via-[#fd746c] to-[#2C3E50]";
+  const logoStyling = "w-[45px] h-[45px] bg-gradient-to-br from-[#6A82FB] via-[#fd746c] to-[#6A82FB]";
 
   return (
     <aside className="sidebar">
@@ -47,6 +47,7 @@ const Sidebar = () => {
         </div>
 
         <nav className="sidebar-nav">
+
           <SignedIn>
             <ul className="sidebar-nav_elements top-4">
               {navLinks.slice(0, 3).map((link) => {
@@ -54,7 +55,7 @@ const Sidebar = () => {
 
                 return (
                   <li key={link.route} className={`sidebar-nav_element group ${
-                    isActive ? 'bg-[#fd746c] text-[#2C3E50]' : 'text-neutral-200'
+                    isActive ? 'bg-gradient-to-r from-[#6A82FB] via-[#fd746c] to-[#6A82FB] text-[#2C3E50]' : 'text-neutral-200'
                   }`}>
                     <Link className="sidebar-link" href={link.route}>
                       <Image 
@@ -77,7 +78,7 @@ const Sidebar = () => {
 
                 return (
                   <li key={link.route} className={`sidebar-nav_element group ${
-                    isActive ? 'bg-[#fd746c] text-[#2C3E50]' : 'text-neutral-200'
+                    isActive ? 'bg-gradient-to-r from-[#6A82FB] via-[#fd746c] to-[#6A82FB text-[#2C3E50]' : 'text-neutral-200'
                   }`}>
                     <Link className="sidebar-link" href={link.route}>
                       <Image 
@@ -98,16 +99,10 @@ const Sidebar = () => {
               </li>
             </ul>
           </SignedIn>
-
-          {/* <SignedOut>
-            <Button asChild className="button bg-[#966F60] bg-cover">
-              <Link href="/sign-in">Login</Link>
-            </Button>
-          </SignedOut> */}
         </nav>
       </div>
     </aside>
-  );
+  )
 };
 
 export default Sidebar;
