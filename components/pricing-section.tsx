@@ -18,9 +18,45 @@ import {
 } from "@/components/ui/pricing/card"
 import { Switch } from "@/components/ui/pricing/switch"
 import { Icons } from "@/components/ui/pricing/icons"
+import axios from "axios"
 
 export function PricingSection(): JSX.Element {
   const [yearlyBilling, setYearlyBilling] = React.useState<boolean>(false)
+  
+  function purchase(event: MouseEvent<HTMLButtonElement, MouseEvent>): void {
+    console.log('purchase test')
+    const errorMessage = '';
+        try {
+          // this.spinner_text = "Ouverture de la \npage de paiement ..."
+          const response = axios.post('/api/v1/stripe/create-checkout-session', {
+            description: 'Souscription à l\'abonnement ',
+            amount: '',
+            currency: 'eur',
+          });
+          const session = response.data;
+          const sessionIdStripe = session.id;
+          this.urlCheckout = session.url;
+
+          console.log('session', session);
+          console.log('sessionIdStripe', this.sessionIdStripe);
+          console.log('urlCheckout', this.urlCheckout);
+
+          if (session.error) {
+            this.errorMessage = session.error.message;
+          } else {
+            console.log('Opening checkout page... ' + this.title);
+            // this.$store.commit('setSelectedPlanTitle', this.title);
+            window.open(this.urlCheckout, '_blank'); // Ouvre dans un nouvel onglet
+            // const { error } = await this.stripe.redirectToCheckout({ sessionId: session.id });
+            // if (error) {
+            //   this.errorMessage = error.message;
+            // }
+          }
+        } catch (error) {
+          this.errorMessage = error.message;
+        }
+  }
+
   return (
     <section
       id="pricing-section"
@@ -131,6 +167,7 @@ export function PricingSection(): JSX.Element {
                   </ul>
                 </div>
                 <Button
+                onClick={purchase}
                   variant="outline"
                   className="h-10 w-full border bg-gradient-to-br from-pink-600/20 to-purple-400/20 font-bold tracking-wide"
                 >
