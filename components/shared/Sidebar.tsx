@@ -37,7 +37,7 @@ const Sidebar = () => {
                 transition={{ repeat: Infinity, duration: 3 }}
                 className={logoStyling}
               ></motion.div>
-              <Link href="/" className="px-3 py-2 flex-1">
+              <Link href="./Home" className="px-3 py-2 flex-1">
                 <h1 className={cn("text-3xl font-bold text-neutral-200", font.className)}>
                   Fiscalya
                 </h1>

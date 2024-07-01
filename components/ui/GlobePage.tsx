@@ -397,7 +397,7 @@ export function GlobeDemo() {
 
   return (
     <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-black bg-neutral-200 relative w-full">
-      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
+      <div className="max-w-7xl mx-auto w-full relative overflow-hidden items-center gap-6 text-center h-full md:h-[40rem] px-4">
         <motion.div
           initial={{
             opacity: 0,
@@ -412,7 +412,7 @@ export function GlobeDemo() {
           }}
           className="div"
         >
-          <h2 className="text-center text-xl md:text-4xl font-bold bg-gradient-to-r from-[#6A82FB] to-[#CB837F] bg-clip-text text-transparent">
+          <h2 className="mt-10 font-urbanist text-4xl font-extrabold bg-gradient-to-r from-[#6A82FB] to-[#CB837F] bg-clip-text text-transparent tracking-tight sm:text-5xl md:text-6xl lg:text-5xl">
             Worldwide Solutions
           </h2>
           <p className="text-center text-base md:text-lg font-semibold text-zinc-500 dark:text-neutral-200 max-w-md mt-2 mx-auto">
