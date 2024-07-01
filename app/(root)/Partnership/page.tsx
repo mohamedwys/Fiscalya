@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-async-client-component */
-"use client"
 
 import { auth } from "@clerk/nextjs/server";
 import { SignedIn } from "@clerk/nextjs";
