@@ -7,7 +7,8 @@ const WhatsappButton: React.FC = () => {
       window.open('whatsapp://send?phone=+971525866003&text=Hello, I need assistance.', '_self');
     } else {
       // WhatsApp is not installed, open the web version in a new tab
-      window.open('https://web.whatsapp.com/send?phone=+971525866003&text=Hello, I need assistance.', '_blank');
+      window.open('https://wa.me/971525866003&text=Hello, I need assistance.', '_blank');
+      //'https://web.whatsapp.com/send?phone=+971525866003&text=Hello, I need assistance.'
     }
   };
   return (
