@@ -57,7 +57,7 @@ export function Card() {
       <SingleCard
         title="Tax Problems"
         description="Find the best solution to your tax problems."
-        imageSrc="/assets/images/taxproblems.jpg"
+        imageSrc="/assets/images/Taxproblems.jpg"
         buttonText="More"
         link="/TaxProblems"
         
