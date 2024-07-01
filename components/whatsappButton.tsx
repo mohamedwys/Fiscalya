@@ -4,7 +4,7 @@ const WhatsappButton: React.FC = () => {
   const handleWhatsappClick = () => {
     if (typeof navigator !== 'undefined' && navigator.userAgent.includes('WhatsApp')) {
       // WhatsApp is installed, open the app with a pre-filled message
-      window.open('https://wa.me/+971525866003&text=Hello, I need assistance.', '_self');
+      window.open('https://wa.me/971525866003', '_blank');
     } //else {
       // WhatsApp is not installed, open the web version in a new tab
       //window.open('https://wa.me/971525866003&text=Hello, I need assistance.', '_blank');
